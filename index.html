@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Practical Quiz 2 - A-Frame Scene</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+
+  <!-- Sky and ground -->
+  <a-sky color="#9fd3ff"></a-sky>
+  <a-plane rotation="-90 0 0" width="30" height="30" color="#3a9d3a"></a-plane>
+
+  <!-- Rug under the table -->
+  <a-circle rotation="-90 0 0" position="0 0.01" radius="2.4" color="#b03a48"></a-circle>
+
+  <!-- TABLE -->
+  <a-entity position="0 0 0">
+    <a-cylinder position="0 0.75 0" radius="1" height="0.08" color="#8b5a2b"></a-cylinder>
+    <a-box position="0.65 0.37 0.65" width="0.1" height="0.74" depth="0.1" color="#6b4220"></a-box>
+    <a-box position="-0.65 0.37 0.65" width="0.1" height="0.74" depth="0.1" color="#6b4220"></a-box>
+    <a-box position="0.65 0.37 -0.65" width="0.1" height="0.74" depth="0.1" color="#6b4220"></a-box>
+    <a-box position="-0.65 0.37 -0.65" width="0.1" height="0.74" depth="0.1" color="#6b4220"></a-box>
+  </a-entity>
+
+  <!-- CHAIRS (4 around the table, each facing the centre) -->
+  <a-entity position="0 0 1.7" rotation="0 0 0">
+    <a-box position="0 0.45 0" width="0.5" height="0.06" depth="0.5" color="#c9a066"></a-box>
+    <a-box position="0 0.75 0.22" width="0.5" height="0.55" depth="0.05" color="#c9a066"></a-box>
+    <a-box position="0.2 0.22 0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="-0.2 0.22 0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="0.2 0.22 -0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="-0.2 0.22 -0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+  </a-entity>
+
+  <a-entity position="1.7 0 0" rotation="0 90 0">
+    <a-box position="0 0.45 0" width="0.5" height="0.06" depth="0.5" color="#c9a066"></a-box>
+    <a-box position="0 0.75 0.22" width="0.5" height="0.55" depth="0.05" color="#c9a066"></a-box>
+    <a-box position="0.2 0.22 0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="-0.2 0.22 0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="0.2 0.22 -0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="-0.2 0.22 -0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+  </a-entity>
+
+  <a-entity position="0 0 -1.7" rotation="0 180 0">
+    <a-box position="0 0.45 0" width="0.5" height="0.06" depth="0.5" color="#c9a066"></a-box>
+    <a-box position="0 0.75 0.22" width="0.5" height="0.55" depth="0.05" color="#c9a066"></a-box>
+    <a-box position="0.2 0.22 0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="-0.2 0.22 0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="0.2 0.22 -0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="-0.2 0.22 -0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+  </a-entity>
+
+  <a-entity position="-1.7 0 0" rotation="0 270 0">
+    <a-box position="0 0.45 0" width="0.5" height="0.06" depth="0.5" color="#c9a066"></a-box>
+    <a-box position="0 0.75 0.22" width="0.5" height="0.55" depth="0.05" color="#c9a066"></a-box>
+    <a-box position="0.2 0.22 0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="-0.2 0.22 0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="0.2 0.22 -0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+    <a-box position="-0.2 0.22 -0.2" width="0.05" height="0.44" depth="0.05" color="#8b5a2b"></a-box>
+  </a-entity>
+
+  <!-- MILO TIN -->
+  <a-entity position="-0.3 0.79 0">
+    <a-cylinder position="0 0.15 0" radius="0.12" height="0.3" color="#1f7a3a"></a-cylinder>
+    <a-cylinder position="0 0.31 0" radius="0.125" height="0.03" color="#14532a"></a-cylinder>
+    <a-text value="MiLo" position="0 0.17 0.121" align="center" width="0.6" color="#ffffff"></a-text>
+  </a-entity>
+
+  <!-- MILK TIN -->
+  <a-entity position="0.3 0.79 0">
+    <a-cylinder position="0 0.1 0" radius="0.09" height="0.2" color="#d93a3a"></a-cylinder>
+    <a-cylinder position="0 0.21 0" radius="0.092" height="0.02" color="#cfcfcf"></a-cylinder>
+    <a-text value="MILK" position="0 0.11 0.091" align="center" width="0.45" color="#ffffff"></a-text>
+  </a-entity>
+
+  <!-- CUP 1 -->
+  <a-entity position="0 0.79 0.5">
+    <a-cylinder position="0 0.05 0" radius="0.06" height="0.1" color="#ffffff" open-ended="true" material="side: double"></a-cylinder>
+    <a-circle rotation="-90 0 0" position="0 0.005 0" radius="0.06" color="#ffffff"></a-circle>
+    <a-torus position="0.075 0.05 0" radius="0.03" radius-tubular="0.008" color="#ffffff"></a-torus>
+  </a-entity>
+
+  <!-- CUP 2 -->
+  <a-entity position="0 0.79 -0.5">
+    <a-cylinder position="0 0.05 0" radius="0.06" height="0.1" color="#ffffff" open-ended="true" material="side: double"></a-cylinder>
+    <a-circle rotation="-90 0 0" position="0 0.005 0" radius="0.06" color="#ffffff"></a-circle>
+    <a-torus position="0.075 0.05 0" radius="0.03" radius-tubular="0.008" color="#ffffff"></a-torus>
+  </a-entity>
+
+  <!-- Extras to beautify: trees -->
+  <a-cylinder position="-5 1 -5" radius="0.2" height="2" color="#6b4220"></a-cylinder>
+  <a-sphere position="-5 2.8 -5" radius="1.2" color="#1e7a1e"></a-sphere>
+  <a-cylinder position="5 1 -6" radius="0.2" height="2" color="#6b4220"></a-cylinder>
+  <a-sphere position="5 2.8 -6" radius="1.2" color="#1e7a1e"></a-sphere>
+
+  <!-- Lights -->
+  <a-light type="ambient" color="#ffffff" intensity="0.7"></a-light>
+  <a-light type="directional" color="#ffffff" intensity="0.8" position="3 6 4"></a-light>
+
+  <!-- Camera (WASD + mouse to look) -->
+  <a-entity position="0 1.6 4.5">
+    <a-camera></a-camera>
+  </a-entity>
+
+</a-scene>
+</body>
+</html>
